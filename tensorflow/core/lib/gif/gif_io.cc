@@ -17,12 +17,15 @@ limitations under the License.
 
 #include "tensorflow/core/lib/gif/gif_io.h"
 #include <algorithm>
+#include <cstring>
 #include "tensorflow/core/lib/gtl/cleanup.h"
 #include "tensorflow/core/lib/strings/strcat.h"
 #include "tensorflow/core/platform/gif.h"
 #include "tensorflow/core/platform/logging.h"
 #include "tensorflow/core/platform/mem.h"
 #include "tensorflow/core/platform/types.h"
+
+using namespace std;
 
 namespace tensorflow {
 namespace gif {
